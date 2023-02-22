@@ -5,8 +5,8 @@ import json
 
 class AnimalShelter(object):
     
-    def __init__(self, me, a):
-        self.client = MongoClient('mongodb://%s:%s@localhost:55061' % (me, a))
+    def __init__(self, username, password):
+        self.client = MongoClient('mongodb://%s:%s@localhost:port# ' % (username, pasword))
         self.database = self.client['ACC'] 
     def create(self,data):
             if data is not None:
